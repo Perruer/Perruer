@@ -4,18 +4,29 @@
 </picture>
 
 I pick up useful open-source tools that their authors had to leave behind and bring them back to life:
-fix what broke, rewrite them for today's browsers, and ship the features users kept asking for in the
+fix what broke, rewrite them for today's platforms, and ship the features users kept asking for in the
 issues. The original authors are always credited, and the licenses are kept.
 
-- 🔭 Currently working on **[Notewing](https://github.com/Perruer/notewing)**: Markdown notes in your own GitHub repository
+- 🔭 Currently working on **[Unclick](https://github.com/Perruer/unclick)**: turn existing cloud resources into OpenTofu / Terraform code
 - 🧩 Browser extensions for Firefox, Chrome and Edge (Manifest V3, one code base)
-- 🧪 Every revived project ships with end-to-end tests in real browsers
+- ⚙️ Command-line tools in Go
+- 🧪 Every revived project ships with end-to-end tests: real browsers, real providers
 - 💡 Know an abandoned project that deserves a second life? [Tell me](https://github.com/Perruer/Perruer/issues/new)
 
 ## Projects
 
 <table>
   <tr>
+    <td width="50%" valign="top">
+      <img src="unclick.svg" width="44" align="left" alt="">
+      <b><a href="https://github.com/Perruer/unclick">Unclick</a></b><br>
+      <sub>CLI · OpenTofu · Terraform</sub>
+      <br clear="left">
+      Turns resources that already exist in your cloud accounts into OpenTofu / Terraform code with
+      import blocks. 44 importers, plus discovery through the providers' own list resources.<br>
+      <sub>Continuation of <a href="https://github.com/GoogleCloudPlatform/terraformer">Terraformer</a> (14.5k★)</sub><br><br>
+      <a href="https://github.com/Perruer/unclick"><b>Get it →</b></a>
+    </td>
     <td width="50%" valign="top">
       <img src="notewing.svg" width="44" align="left" alt="">
       <b><a href="https://github.com/Perruer/notewing">Notewing</a></b><br>
@@ -26,6 +37,8 @@ issues. The original authors are always credited, and the licenses are kept.
       <sub>Continuation of <a href="https://github.com/batnoter/batnoter">BatNoter</a> (2.4k★)</sub><br><br>
       <a href="https://perruer.github.io/notewing/"><b>Open the app →</b></a>
     </td>
+  </tr>
+  <tr>
     <td width="50%" valign="top">
       <img src="cookietin.svg" width="44" align="left" alt="">
       <b><a href="https://github.com/Perruer/cookietin">CookieTin</a></b><br>
@@ -36,8 +49,6 @@ issues. The original authors are always credited, and the licenses are kept.
       <sub>Rewrite of <a href="https://github.com/ysard/cookie-quick-manager">Cookie Quick Manager</a></sub><br><br>
       <a href="https://github.com/Perruer/cookietin/releases/latest"><b>Download →</b></a>
     </td>
-  </tr>
-  <tr>
     <td width="50%" valign="top">
       <img src="wordtoast.svg" width="44" align="left" alt="">
       <b><a href="https://github.com/Perruer/wordtoast">WordToast</a></b><br>
@@ -48,6 +59,8 @@ issues. The original authors are always credited, and the licenses are kept.
       <sub>Rewrite of <a href="https://github.com/waynecz/dadda-translate-crx">Dadda Translate</a></sub><br><br>
       <a href="https://github.com/Perruer/wordtoast/releases/latest"><b>Download →</b></a>
     </td>
+  </tr>
+  <tr>
     <td width="50%" valign="top">
       <img src="skullclick.svg" width="44" align="left" alt="">
       <b><a href="https://github.com/Perruer/skullclick">SkullClick</a></b><br>
@@ -57,12 +70,14 @@ issues. The original authors are always credited, and the licenses are kept.
       <sub>Fork of <a href="https://github.com/rhardih/ekill">ekill</a></sub><br><br>
       <a href="https://github.com/Perruer/skullclick/releases/latest"><b>Download →</b></a>
     </td>
+    <td width="50%" valign="top"></td>
   </tr>
 </table>
 
 ## Tools I use
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 ![Preact](https://img.shields.io/badge/Preact-673AB8?style=flat-square&logo=preact&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
@@ -71,6 +86,7 @@ issues. The original authors are always credited, and the licenses are kept.
 ![Puppeteer](https://img.shields.io/badge/Puppeteer-40B5A4?style=flat-square&logo=puppeteer&logoColor=white)
 ![Firefox](https://img.shields.io/badge/Firefox_Add--ons-FF7139?style=flat-square&logo=firefoxbrowser&logoColor=white)
 ![Chrome](https://img.shields.io/badge/Chrome_Extensions-4285F4?style=flat-square&logo=googlechrome&logoColor=white)
+![OpenTofu](https://img.shields.io/badge/OpenTofu-FFDA18?style=flat-square&logo=opentofu&logoColor=black)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
 
 ## Support my work

@@ -2,7 +2,7 @@
 // plus PNG previews.   node make.mjs
 import { readFileSync, writeFileSync } from "node:fs";
 
-const icons = ["notewing", "cookietin", "wordtoast", "skullclick"].map((name) => {
+const icons = ["unclick", "notewing", "cookietin", "wordtoast", "skullclick"].map((name) => {
   let svg = readFileSync(`${name}.svg`, "utf8").replace(/<\?xml[^>]*>/, "");
   // Give every id a unique prefix so the embedded icons do not clash.
   svg = svg.replace(/id="([^"]+)"/g, `id="${name}-$1"`).replace(/url\(#([^)]+)\)/g, `url(#${name}-$1)`);
@@ -11,7 +11,7 @@ const icons = ["notewing", "cookietin", "wordtoast", "skullclick"].map((name) =>
   return { name, inner, viewBox };
 });
 
-const LABEL = { notewing: "Notewing", cookietin: "CookieTin", wordtoast: "WordToast", skullclick: "SkullClick" };
+const LABEL = { unclick: "Unclick", notewing: "Notewing", cookietin: "CookieTin", wordtoast: "WordToast", skullclick: "SkullClick" };
 
 function banner(theme) {
   const dark = theme === "dark";
@@ -20,10 +20,11 @@ function banner(theme) {
     : { bg1: "#ffffff", bg2: "#eef0ff", text: "#1f2328", muted: "#59636e", accent: "#5048e5", card: "#ffffff", border: "#d8dcef", grid: "#1f2328", gridOp: 0.05, glow: "#a5a1ff" };
 
   const pos = [
-    { x: 738, y: 52 },
-    { x: 936, y: 88 },
-    { x: 762, y: 190 },
-    { x: 960, y: 214 },
+    { x: 742, y: 22 },
+    { x: 940, y: 64 },
+    { x: 760, y: 126 },
+    { x: 958, y: 170 },
+    { x: 742, y: 230 },
   ];
   const cards = icons
     .map((ic, i) => {
@@ -53,7 +54,7 @@ function banner(theme) {
   <style>
     text { font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; }
     .f { animation: float 6s ease-in-out infinite; }
-    .f1 { animation-delay: -1.5s; } .f2 { animation-delay: -3s; } .f3 { animation-delay: -4.5s; }
+    .f1 { animation-delay: -1.2s; } .f2 { animation-delay: -2.4s; } .f3 { animation-delay: -3.6s; } .f4 { animation-delay: -4.8s; }
     @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
     .spark { animation: blink 3s ease-in-out infinite; }
     .s2 { animation-delay: -1s; } .s3 { animation-delay: -2s; }
@@ -70,17 +71,17 @@ function banner(theme) {
     <text x="64" y="104" font-size="20" fill="${c.accent}" font-weight="600">Hi there 👋, I'm</text>
     <text x="62" y="170" font-size="64" font-weight="800" fill="${c.text}" letter-spacing="-2">Perruer</text>
     <text x="64" y="214" font-size="23" fill="${c.text}">Giving abandoned open-source projects a second life</text>
-    <text x="64" y="252" font-size="16" fill="${c.muted}">Browser extensions · Web apps · Always crediting the original authors</text>
+    <text x="64" y="252" font-size="16" fill="${c.muted}">Browser extensions · Web apps · CLI tools · Always crediting the original authors</text>
 
     <g font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="13">
       <rect x="64" y="276" width="222" height="30" rx="8" fill="${c.card}" stroke="${c.border}"/>
       <text x="78" y="296" fill="${c.muted}">$ git commit -m <tspan fill="${c.accent}">"revive ✓"</tspan></text>
     </g>
 
-    <path class="dash" d="M700 280 C 730 180, 700 110, 760 96" fill="none" stroke="${c.accent}" stroke-width="2" stroke-opacity=".6"/>
+    <path class="dash" d="M706 300 C 724 200, 700 120, 752 70" fill="none" stroke="${c.accent}" stroke-width="2" stroke-opacity=".6"/>
     <path class="dash" d="M1145 60 C 1180 140, 1170 230, 1125 262" fill="none" stroke="${c.accent}" stroke-width="2" stroke-opacity=".45"/>
     <g fill="${c.accent}">
-      <path class="spark" d="M720 60l4 10 10 4-10 4-4 10-4-10-10-4 10-4z"/>
+      <path class="spark" d="M712 176l4 10 10 4-10 4-4 10-4-10-10-4 10-4z"/>
       <path class="spark s2" d="M1150 300l3 7 7 3-7 3-3 7-3-7-7-3 7-3z"/>
       <path class="spark s3" d="M905 26l3 6 6 3-6 3-3 6-3-6-6-3 6-3z"/>
     </g>
