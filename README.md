@@ -25,7 +25,7 @@ issues. The original authors are always credited, and the licenses are kept.
       Turns resources that already exist in your cloud accounts into OpenTofu / Terraform code with
       import blocks. 44 importers, plus discovery through the providers' own list resources.<br>
       <sub>Continuation of <a href="https://github.com/GoogleCloudPlatform/terraformer">Terraformer</a> (14.5k★)</sub><br><br>
-      <a href="https://github.com/Perruer/unclick"><b>Get it →</b></a>
+      <a href="https://github.com/Perruer/unclick/releases/latest"><b>Download →</b></a>
     </td>
     <td width="50%" valign="top">
       <img src="notewing.svg" width="44" align="left" alt="">
