@@ -7,9 +7,9 @@ I pick up useful open-source tools that their authors had to leave behind and br
 fix what broke, rewrite them for today's platforms, and ship the features users kept asking for in the
 issues. The original authors are always credited, and the licenses are kept.
 
-- 🔭 Currently working on **[Unclick](https://github.com/Perruer/unclick)**: turn existing cloud resources into OpenTofu / Terraform code
+- 🔭 Currently working on **[Gorget](https://github.com/Perruer/gorget)**: security scanners for LLM prompts and responses, the maintained continuation of LLM Guard
 - 🧩 Browser extensions for Firefox, Chrome and Edge (Manifest V3, one code base)
-- ⚙️ Command-line tools in Go
+- ⚙️ Command-line tools in Go and Python libraries
 - 🧪 Every revived project ships with end-to-end tests: real browsers, real providers
 - 💡 Know an abandoned project that deserves a second life? [Tell me](https://github.com/Perruer/Perruer/issues/new)
 
@@ -17,6 +17,16 @@ issues. The original authors are always credited, and the licenses are kept.
 
 <table>
   <tr>
+    <td width="50%" valign="top">
+      <img src="gorget.svg" width="44" align="left" alt="">
+      <b><a href="https://github.com/Perruer/gorget">Gorget</a></b><br>
+      <sub>Python · LLM security · ONNX</sub>
+      <br clear="left">
+      Scans prompts and answers of language models for prompt injection, personal data (including
+      Russian documents), secrets and toxicity. Runs on CPU without PyTorch.<br>
+      <sub>Continuation of <a href="https://github.com/protectai/llm-guard">LLM Guard</a> (3.2k★)</sub><br><br>
+      <a href="https://github.com/Perruer/gorget#install"><b>Install →</b></a>
+    </td>
     <td width="50%" valign="top">
       <img src="unclick.svg" width="44" align="left" alt="">
       <b><a href="https://github.com/Perruer/unclick">Unclick</a></b><br>
@@ -27,6 +37,8 @@ issues. The original authors are always credited, and the licenses are kept.
       <sub>Continuation of <a href="https://github.com/GoogleCloudPlatform/terraformer">Terraformer</a> (14.5k★)</sub><br><br>
       <a href="https://github.com/Perruer/unclick/releases/latest"><b>Download →</b></a>
     </td>
+  </tr>
+  <tr>
     <td width="50%" valign="top">
       <img src="notewing.svg" width="44" align="left" alt="">
       <b><a href="https://github.com/Perruer/notewing">Notewing</a></b><br>
@@ -37,8 +49,6 @@ issues. The original authors are always credited, and the licenses are kept.
       <sub>Continuation of <a href="https://github.com/batnoter/batnoter">BatNoter</a> (2.4k★)</sub><br><br>
       <a href="https://perruer.github.io/notewing/"><b>Open the app →</b></a>
     </td>
-  </tr>
-  <tr>
     <td width="50%" valign="top">
       <img src="cookietin.svg" width="44" align="left" alt="">
       <b><a href="https://github.com/Perruer/cookietin">CookieTin</a></b><br>
@@ -49,6 +59,8 @@ issues. The original authors are always credited, and the licenses are kept.
       <sub>Rewrite of <a href="https://github.com/ysard/cookie-quick-manager">Cookie Quick Manager</a></sub><br><br>
       <a href="https://github.com/Perruer/cookietin/releases/latest"><b>Download →</b></a>
     </td>
+  </tr>
+  <tr>
     <td width="50%" valign="top">
       <img src="wordtoast.svg" width="44" align="left" alt="">
       <b><a href="https://github.com/Perruer/wordtoast">WordToast</a></b><br>
@@ -59,8 +71,6 @@ issues. The original authors are always credited, and the licenses are kept.
       <sub>Rewrite of <a href="https://github.com/waynecz/dadda-translate-crx">Dadda Translate</a></sub><br><br>
       <a href="https://github.com/Perruer/wordtoast/releases/latest"><b>Download →</b></a>
     </td>
-  </tr>
-  <tr>
     <td width="50%" valign="top">
       <img src="skullclick.svg" width="44" align="left" alt="">
       <b><a href="https://github.com/Perruer/skullclick">SkullClick</a></b><br>
@@ -70,7 +80,6 @@ issues. The original authors are always credited, and the licenses are kept.
       <sub>Fork of <a href="https://github.com/rhardih/ekill">ekill</a></sub><br><br>
       <a href="https://github.com/Perruer/skullclick/releases/latest"><b>Download →</b></a>
     </td>
-    <td width="50%" valign="top"></td>
   </tr>
 </table>
 
@@ -78,6 +87,8 @@ issues. The original authors are always credited, and the licenses are kept.
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![ONNX](https://img.shields.io/badge/ONNX_Runtime-005CED?style=flat-square&logo=onnx&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 ![Preact](https://img.shields.io/badge/Preact-673AB8?style=flat-square&logo=preact&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)

@@ -2,7 +2,7 @@
 // plus PNG previews.   node make.mjs
 import { readFileSync, writeFileSync } from "node:fs";
 
-const icons = ["unclick", "notewing", "cookietin", "wordtoast", "skullclick"].map((name) => {
+const icons = ["gorget", "unclick", "notewing", "cookietin", "wordtoast", "skullclick"].map((name) => {
   let svg = readFileSync(`${name}.svg`, "utf8").replace(/<\?xml[^>]*>/, "");
   // Give every id a unique prefix so the embedded icons do not clash.
   svg = svg.replace(/id="([^"]+)"/g, `id="${name}-$1"`).replace(/url\(#([^)]+)\)/g, `url(#${name}-$1)`);
@@ -11,7 +11,7 @@ const icons = ["unclick", "notewing", "cookietin", "wordtoast", "skullclick"].ma
   return { name, inner, viewBox };
 });
 
-const LABEL = { unclick: "Unclick", notewing: "Notewing", cookietin: "CookieTin", wordtoast: "WordToast", skullclick: "SkullClick" };
+const LABEL = { gorget: "Gorget", unclick: "Unclick", notewing: "Notewing", cookietin: "CookieTin", wordtoast: "WordToast", skullclick: "SkullClick" };
 
 function banner(theme) {
   const dark = theme === "dark";
@@ -20,11 +20,12 @@ function banner(theme) {
     : { bg1: "#ffffff", bg2: "#eef0ff", text: "#1f2328", muted: "#59636e", accent: "#5048e5", card: "#ffffff", border: "#d8dcef", grid: "#1f2328", gridOp: 0.05, glow: "#a5a1ff" };
 
   const pos = [
-    { x: 742, y: 22 },
-    { x: 940, y: 64 },
-    { x: 760, y: 126 },
-    { x: 958, y: 170 },
-    { x: 742, y: 230 },
+    { x: 732, y: 14 },
+    { x: 930, y: 34 },
+    { x: 732, y: 118 },
+    { x: 930, y: 138 },
+    { x: 732, y: 222 },
+    { x: 930, y: 242 },
   ];
   const cards = icons
     .map((ic, i) => {
@@ -54,7 +55,7 @@ function banner(theme) {
   <style>
     text { font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; }
     .f { animation: float 6s ease-in-out infinite; }
-    .f1 { animation-delay: -1.2s; } .f2 { animation-delay: -2.4s; } .f3 { animation-delay: -3.6s; } .f4 { animation-delay: -4.8s; }
+    .f1 { animation-delay: -1.2s; } .f2 { animation-delay: -2.4s; } .f3 { animation-delay: -3.6s; } .f4 { animation-delay: -4.8s; } .f5 { animation-delay: -6s; }
     @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
     .spark { animation: blink 3s ease-in-out infinite; }
     .s2 { animation-delay: -1s; } .s3 { animation-delay: -2s; }
