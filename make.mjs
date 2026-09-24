@@ -2,7 +2,7 @@
 // plus PNG previews.   node make.mjs
 import { readFileSync, writeFileSync } from "node:fs";
 
-const icons = ["gorget", "unclick", "notewing", "cookietin", "wordtoast", "skullclick"].map((name) => {
+const icons = ["keelflow", "gorget", "unclick", "notewing", "cookietin", "wordtoast"].map((name) => {
   let svg = readFileSync(`${name}.svg`, "utf8").replace(/<\?xml[^>]*>/, "");
   // Give every id a unique prefix so the embedded icons do not clash.
   svg = svg.replace(/id="([^"]+)"/g, `id="${name}-$1"`).replace(/url\(#([^)]+)\)/g, `url(#${name}-$1)`);
@@ -11,7 +11,7 @@ const icons = ["gorget", "unclick", "notewing", "cookietin", "wordtoast", "skull
   return { name, inner, viewBox };
 });
 
-const LABEL = { gorget: "Gorget", unclick: "Unclick", notewing: "Notewing", cookietin: "CookieTin", wordtoast: "WordToast", skullclick: "SkullClick" };
+const LABEL = { keelflow: "Keelflow", gorget: "Gorget", unclick: "Unclick", notewing: "Notewing", cookietin: "CookieTin", wordtoast: "WordToast", skullclick: "SkullClick" };
 
 function banner(theme) {
   const dark = theme === "dark";

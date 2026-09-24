@@ -7,7 +7,7 @@ I pick up useful open-source tools that their authors had to leave behind and br
 fix what broke, rewrite them for today's platforms, and ship the features users kept asking for in the
 issues. The original authors are always credited, and the licenses are kept.
 
-- 🔭 Currently working on **[Gorget](https://github.com/Perruer/gorget)**: security scanners for LLM prompts and responses, the maintained continuation of LLM Guard
+- 🔭 Currently working on **[Keelflow](https://github.com/Perruer/keelflow)**: build AI agents and LLM workflows visually, the security-maintained continuation of Flowise
 - 🧩 Browser extensions for Firefox, Chrome and Edge (Manifest V3, one code base)
 - ⚙️ Command-line tools in Go and Python libraries
 - 🧪 Every revived project ships with end-to-end tests: real browsers, real providers
@@ -18,6 +18,16 @@ issues. The original authors are always credited, and the licenses are kept.
 <table>
   <tr>
     <td width="50%" valign="top">
+      <img src="keelflow.svg" width="44" align="left" alt="">
+      <b><a href="https://github.com/Perruer/keelflow">Keelflow</a></b><br>
+      <sub>Self-hosted · AI agents · Docker</sub>
+      <br clear="left">
+      Build AI agents, RAG pipelines and chatbots visually. Security fixes, an Apache-2.0-only code
+      base, and your existing Flowise flows, keys and data work as they are.<br>
+      <sub>Continuation of <a href="https://github.com/FlowiseAI/Flowise">Flowise</a> (55k★)</sub><br><br>
+      <a href="https://github.com/Perruer/keelflow#quick-start"><b>Run it →</b></a>
+    </td>
+    <td width="50%" valign="top">
       <img src="gorget.svg" width="44" align="left" alt="">
       <b><a href="https://github.com/Perruer/gorget">Gorget</a></b><br>
       <sub>Python · LLM security · ONNX</sub>
@@ -27,6 +37,8 @@ issues. The original authors are always credited, and the licenses are kept.
       <sub>Continuation of <a href="https://github.com/protectai/llm-guard">LLM Guard</a> (3.2k★)</sub><br><br>
       <a href="https://github.com/Perruer/gorget#install"><b>Install →</b></a>
     </td>
+  </tr>
+  <tr>
     <td width="50%" valign="top">
       <img src="unclick.svg" width="44" align="left" alt="">
       <b><a href="https://github.com/Perruer/unclick">Unclick</a></b><br>
@@ -37,8 +49,6 @@ issues. The original authors are always credited, and the licenses are kept.
       <sub>Continuation of <a href="https://github.com/GoogleCloudPlatform/terraformer">Terraformer</a> (14.5k★)</sub><br><br>
       <a href="https://github.com/Perruer/unclick/releases/latest"><b>Download →</b></a>
     </td>
-  </tr>
-  <tr>
     <td width="50%" valign="top">
       <img src="notewing.svg" width="44" align="left" alt="">
       <b><a href="https://github.com/Perruer/notewing">Notewing</a></b><br>
@@ -49,6 +59,8 @@ issues. The original authors are always credited, and the licenses are kept.
       <sub>Continuation of <a href="https://github.com/batnoter/batnoter">BatNoter</a> (2.4k★)</sub><br><br>
       <a href="https://perruer.github.io/notewing/"><b>Open the app →</b></a>
     </td>
+  </tr>
+  <tr>
     <td width="50%" valign="top">
       <img src="cookietin.svg" width="44" align="left" alt="">
       <b><a href="https://github.com/Perruer/cookietin">CookieTin</a></b><br>
@@ -59,8 +71,6 @@ issues. The original authors are always credited, and the licenses are kept.
       <sub>Rewrite of <a href="https://github.com/ysard/cookie-quick-manager">Cookie Quick Manager</a></sub><br><br>
       <a href="https://github.com/Perruer/cookietin/releases/latest"><b>Download →</b></a>
     </td>
-  </tr>
-  <tr>
     <td width="50%" valign="top">
       <img src="wordtoast.svg" width="44" align="left" alt="">
       <b><a href="https://github.com/Perruer/wordtoast">WordToast</a></b><br>
@@ -71,6 +81,8 @@ issues. The original authors are always credited, and the licenses are kept.
       <sub>Rewrite of <a href="https://github.com/waynecz/dadda-translate-crx">Dadda Translate</a></sub><br><br>
       <a href="https://github.com/Perruer/wordtoast/releases/latest"><b>Download →</b></a>
     </td>
+  </tr>
+  <tr>
     <td width="50%" valign="top">
       <img src="skullclick.svg" width="44" align="left" alt="">
       <b><a href="https://github.com/Perruer/skullclick">SkullClick</a></b><br>
