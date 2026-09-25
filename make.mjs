@@ -2,7 +2,7 @@
 // plus PNG previews.   node make.mjs
 import { readFileSync, writeFileSync } from "node:fs";
 
-const icons = ["yapix", "keelflow", "gorget", "unclick", "notewing", "cookietin", "wordtoast", "skullclick"].map((name) => {
+const icons = ["sapper", "yapix", "keelflow", "gorget", "unclick", "notewing", "cookietin", "wordtoast", "skullclick"].map((name) => {
   let svg = readFileSync(`${name}.svg`, "utf8").replace(/<\?xml[^>]*>/, "");
   // Give every id a unique prefix so the embedded icons do not clash.
   svg = svg.replace(/id="([^"]+)"/g, `id="${name}-$1"`).replace(/url\(#([^)]+)\)/g, `url(#${name}-$1)`);
@@ -11,7 +11,7 @@ const icons = ["yapix", "keelflow", "gorget", "unclick", "notewing", "cookietin"
   return { name, inner, viewBox };
 });
 
-const LABEL = { yapix: "Yapix", keelflow: "Keelflow", gorget: "Gorget", unclick: "Unclick", notewing: "Notewing", cookietin: "CookieTin", wordtoast: "WordToast", skullclick: "SkullClick" };
+const LABEL = { sapper: "Sapper", yapix: "Yapix", keelflow: "Keelflow", gorget: "Gorget", unclick: "Unclick", notewing: "Notewing", cookietin: "CookieTin", wordtoast: "WordToast", skullclick: "SkullClick" };
 
 function banner(theme) {
   const dark = theme === "dark";
@@ -19,19 +19,19 @@ function banner(theme) {
     ? { bg1: "#0d1117", bg2: "#161b33", text: "#e6edf3", muted: "#8b949e", accent: "#8a84ff", card: "#161b22", border: "#30363d", grid: "#ffffff", gridOp: 0.035, glow: "#6d6af5" }
     : { bg1: "#ffffff", bg2: "#eef0ff", text: "#1f2328", muted: "#59636e", accent: "#5048e5", card: "#ffffff", border: "#d8dcef", grid: "#1f2328", gridOp: 0.05, glow: "#a5a1ff" };
 
-  // Two columns of four cards; the right column sits a little lower.
-  const pos = [0, 1, 2, 3].flatMap((row) => [
-    { x: 732, y: 12 + row * 80 },
-    { x: 930, y: 24 + row * 80 },
+  // Two columns, five cards on the left and four on the right; the right column sits lower.
+  const pos = [0, 1, 2, 3, 4].flatMap((row) => [
+    { x: 732, y: 12 + row * 64 },
+    ...(row < 4 ? [{ x: 930, y: 44 + row * 64 }] : []),
   ]);
   const cards = icons
     .map((ic, i) => {
       const p = pos[i];
       return `<g class="f f${i}">
-    <rect x="${p.x}" y="${p.y}" width="176" height="70" rx="14" fill="${c.card}" stroke="${c.border}"/>
-    <svg x="${p.x + 13}" y="${p.y + 13}" width="44" height="44" viewBox="${ic.viewBox}">${ic.inner}</svg>
-    <text x="${p.x + 68}" y="${p.y + 32}" class="t" font-size="15" font-weight="700" fill="${c.text}">${LABEL[ic.name]}</text>
-    <text x="${p.x + 68}" y="${p.y + 51}" font-size="12" fill="${c.ok || "#2ea043"}">● revived</text>
+    <rect x="${p.x}" y="${p.y}" width="176" height="56" rx="12" fill="${c.card}" stroke="${c.border}"/>
+    <svg x="${p.x + 11}" y="${p.y + 10}" width="36" height="36" viewBox="${ic.viewBox}">${ic.inner}</svg>
+    <text x="${p.x + 58}" y="${p.y + 25}" class="t" font-size="15" font-weight="700" fill="${c.text}">${LABEL[ic.name]}</text>
+    <text x="${p.x + 58}" y="${p.y + 43}" font-size="12" fill="${c.ok || "#2ea043"}">● revived</text>
   </g>`;
     })
     .join("\n  ");
@@ -52,7 +52,7 @@ function banner(theme) {
   <style>
     text { font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; }
     .f { animation: float 6s ease-in-out infinite; }
-    .f1 { animation-delay: -0.75s; } .f2 { animation-delay: -1.5s; } .f3 { animation-delay: -2.25s; } .f4 { animation-delay: -3s; } .f5 { animation-delay: -3.75s; } .f6 { animation-delay: -4.5s; } .f7 { animation-delay: -5.25s; }
+    .f1 { animation-delay: -0.75s; } .f2 { animation-delay: -1.5s; } .f3 { animation-delay: -2.25s; } .f4 { animation-delay: -3s; } .f5 { animation-delay: -3.75s; } .f6 { animation-delay: -4.5s; } .f7 { animation-delay: -5.25s; } .f8 { animation-delay: -5.6s; }
     @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
     .spark { animation: blink 3s ease-in-out infinite; }
     .s2 { animation-delay: -1s; } .s3 { animation-delay: -2s; }
